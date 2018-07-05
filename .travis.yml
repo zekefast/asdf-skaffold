@@ -1,0 +1,9 @@
+language: c
+os:
+  - linux
+  - osx
+before_script:
+  - git clone https://github.com/asdf-vm/asdf.git
+  - source asdf/asdf.sh
+script:
+  - asdf plugin-test skaffold https://github.com/zekefast/asdf-skaffold.git
